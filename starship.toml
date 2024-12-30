@@ -168,8 +168,8 @@ threshold = 70
 style = "italic dimmed yellow"
 
 [git_branch]
-format = "[$symbol $branch(:$remote_branch)]($style)"
-symbol = ""
+format = " [$symbol$branch(:$remote_branch)]($style) "
+symbol = " "
 style = "italic dimmed bright-green"
 truncation_symbol = "⋯"
 truncation_length = 11
@@ -180,7 +180,7 @@ only_attached = true
 disabled = false
 style = "bold italic bright-yellow"
 format = "([$ahead_behind$staged$modified$untracked$renamed$deleted$conflicted$stashed]($style))"
-up_to_date = '[ ✓ ](bright-blue)'
+up_to_date = '[✓](bright-blue) '
 untracked = '[?\($count\)](dimmed yellow)'
 stashed = '[\$](dimmed green)'
 modified = '[!\($count\)](purple)'
